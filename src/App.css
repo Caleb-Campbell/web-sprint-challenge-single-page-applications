@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+
+.ButtonRegular {
+text-decoration: none;
+border-radius: 1px;
+border: white 1px solid;
+background-color: royalblue;
+color: white;
+font-weight: bold;
+}
+.ButtonRegular:hover{
+    color:black;
+    cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header{
+   background-color:  rgb(0, 0, 0, .4);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+    font-size: 4em;
+    display: inline;
+    padding-inline: 1em;;
+}
+nav{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 10%;
+    font-size: 1.5em;
+    padding-left: 40%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav a:hover{
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.headBoard{
+
+width: 100%;
+height: 50vh;
+background-image: url('../Assets/Pizza.jpg');
+display: flex;
+flex-flow: column wrap;
+justify-content: center;
+align-items: center;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.headBoard h3 {
+font-size: 3em;
+background-color: rgb(0, 0, 0, .5);
+padding: 1%;
+border-radius: 15px;
+color: #fff;
+}
+.headBoard button{
+    width: 8%;
+    scale: 2;
+}
+
+.pizzaTime{
+    width: 100%;
+    background-color: rgb(0, 0, 0, .3);
+    margin: 0 auto;
+    height: 100vh;
+    padding-top: 5%;
+
+}
+.pizzaTime label{
+    width: 30%;
+    color: #fff;
+    display: flex;
+    flex-wrap: row wrap;
+    align-items: center;
+    font-size: 2em;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0, .3);
+}
+.pizzaTime label input, select{
+    margin: 5%;
+    width: 40%;
+    font-size: .8em;
+}
+.checkboxes{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+
+}
+.checkboxes label {
+    font-size: 1em;
+    float: left;
+    display: flex;
+    flex-flow: column;
+    background-color: rgb(0, 0, 0, 0);
+
+}
+.checkboxes label input {
+    margin-right: 0;
+    scale: 2;
+
+}
+.submit input {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+p {
+    color: red;
+    font-size: .5em;
+    text-align: center;
+}
+
+
+@media (max-width: 428px) {
+    nav{
+        display: block;
+        width: 50%;
+        text-align: center;
+        padding-inline: 0;
+        margin: 0 auto;
+    }
+    nav a{
+        padding-inline: 5%;
+    }
+    h1 {
+        font-size: 2em;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+ }
 }
