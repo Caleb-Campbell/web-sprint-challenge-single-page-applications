@@ -10,6 +10,7 @@ import axios from "axios";
 import Error from "./components/Error";
 
 const App = () => {
+  //APPPPP//
 
   // STATE SLICES ARE DEFINED //
 
